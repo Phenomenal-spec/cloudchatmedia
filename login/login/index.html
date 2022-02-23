@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <form action="C:\Users\FabianEdem\Desktop\cloudchat2\index.html" class="login active">
+            <h2 class="title">Login with your account</h2>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-group">
+                <input type="email" id="email" required placeholder="Email Address">
+                <i class='bx bx-envelope'></i>
+            </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <div class="input-group">
+                <input type="password" pattern=".{8,}" id="password" required placeholder="Your password">
+                <i class='bx bx-lock-alt' ></i>
+            </div>
+            <span class="help-text">At least 8 characters</span>
+            </div>
+            <button type="submit" class="btn-submit">Login</button>
+            <a href="#">Forgot password?</a>
+            <p>I don't have an account. <a href="#" onclick="switchForm('Register', event)">Register</a></p>
+        </form>
+
+        <form action="#" class="Register">
+            <h2 class="title">Register your account</h2>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-group">
+                <input type="email" id="email" required placeholder="Email Address">
+                <i class='bx bx-envelope'></i>
+            </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <div class="input-group">
+                <input type="password" pattern=".{8,}" id="password" required placeholder="Your password">
+                <i class='bx bx-lock-alt' ></i>
+            </div>
+            <span class="help-text">At least 8 characters</span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-pass">Confirm Password</label>
+                <div class="input-group">
+                <input type="password" pattern=".{8,}" id="confirm pass" required placeholder="Enter password again">
+                <i class='bx bx-lock-alt' ></i>
+            </div>
+            <span class="help-text">Confirm password must be the same with password</span>
+            </div>
+            <button type="submit" class="btn-submit">Register</button>
+            <p>I already have an account. <a href="#" onclick="switchForm('login', event)">Login</a></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
